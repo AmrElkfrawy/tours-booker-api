@@ -58,7 +58,7 @@ exports.alaisTopTours = (req, res, next) => {
   next();
 };
 
-exports.deleteTour = factory.deletOne(Tour);
+exports.deleteTour = factory.deleteOne(Tour);
 exports.updateTour = factory.updateOne(Tour);
 exports.createTour = factory.createOne(Tour);
 exports.getAllTours = factory.getAll(Tour);

@@ -39,7 +39,7 @@ exports.getUser = factory.getOne(User);
 
 // admin apis
 exports.updateUser = factory.updateOne(User);
-exports.deleteUser = factory.deletOne(User);
+exports.deleteUser = factory.deleteOne(User);
 exports.getAllUsers = factory.getAll(User);
 
 const filterObj = (obj, ...allowedFields) => {

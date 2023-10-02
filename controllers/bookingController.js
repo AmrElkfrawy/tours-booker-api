@@ -9,7 +9,7 @@ exports.getAllBookings = factory.getAll(Booking);
 exports.getBooking = factory.getOne(Booking);
 exports.Createbooking = factory.createOne(Booking);
 exports.updatelBooking = factory.updateOne(Booking);
-exports.deletelBooking = factory.deletOne(Booking);
+exports.deletelBooking = factory.deleteOne(Booking);
 
 exports.mybookings = catchAsync(async (req, res, next) => {
   const bookings = await Booking.find({ user: req.user._id });
