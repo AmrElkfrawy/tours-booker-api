@@ -37,3 +37,7 @@ Welcome to the Trip Booker API! This API is built using Express.js and MongoDB a
    ```bash
    npm run debug
    ```
+
+## Documentation
+
+For comprehensive documentation, please visit the [Documentation](./docs) folder in this repository.
