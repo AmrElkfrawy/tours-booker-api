@@ -119,7 +119,7 @@ exports.logout = (req, res) => {
       httpOnly: true,
     });
   }
-  res.status(200).json({ status: 'success', token: undefined });
+  res.status(204).end();
 };
 
 // Wrapped middleware inside function to give middle ware access to parameters

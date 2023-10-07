@@ -42,7 +42,15 @@ router
   );
 router
   .route('/:id')
-  .patch(authController.protect, userController.updateUser)
-  .delete(authController.protect, userController.deleteUser);
+  .patch(
+    authController.protect,
+    authController.restrictTo('admin'),
+    userController.updateUser,
+  )
+  .delete(
+    authController.protect,
+    authController.restrictTo('admin'),
+    userController.deleteUser,
+  );
 
 module.exports = router;
